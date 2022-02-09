@@ -16,6 +16,10 @@
         <input type="submit">
     </form>
     <?php
+    session_start();
+    if (!($_SESSION["pantalla1"]=='check')) {
+        header("Location: ../index.php");
+    }
     if (isset($_GET['msg'])) {
         echo '<p>Intenta con el Pokemon #'.$_GET['msg'].'</p>';
     }

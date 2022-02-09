@@ -16,6 +16,8 @@
         <input type="submit">
     </form>
     <?php
+
+
     if (isset($_GET['msg'])) {
         echo '<p>Intenta con el Pokemon #'.$_GET['msg'].'</p>';
     }

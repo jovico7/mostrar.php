@@ -7,6 +7,14 @@
     <title>Recogida de datos</title>
 </head>
 <body>
+    <?php
+    //recupero la sesión
+    session_start();
+    if (!($_SESSION["pantalla2"]=='check')) {
+        header("Location: ../index.php");
+    }
+    ?>
 <h1>Lo has adivinado!!</h1>
+<a href="../index.php">Volver a jugar</a>
 </body>
 </html>
